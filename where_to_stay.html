@@ -4,49 +4,65 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	<title>Where to Stay</title>
 </head>
 <body>
-<div class="header">
-	<img src="./images/logo.png">
-	<header>
-		<a href="index.html">Home</a>
-	</header>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>DISCOVER</option>
-		<option value="language.html">Language</option>
-		<option value="history.html">History & Culture</option>
-		<option value="people.html">People & Traditions</option>
-		<option value="local_cuisine.html">Local Cuisine</option>
-		<option value="photo.html">Photo Gallery</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>DESTINATIONS</option>
-		<option value="natural_wonders.html">Natural Wonders</option>
-		<option value="beaches.html">Beaches & Islands</option>
-		<option value="inland.html">Inland Attractions</option>
-		<option value="municipality.html">Municipality Highlights</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>ACTIVITIES</option>
-		<option value="eco_tourism.html">Adventure & Eco-Tourism</option>
-		<option value="festivals.html">Festivals & Events</option>
-		<option value="arts.html">Arts & Crafts</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>PLAN YOUR TRIP</option>
-		<option value="getting_there.html">Getting There</option>
-		<option value="where_to_stay.html">Where to Stay</option>
-		<option value="travel_tips.html">Travel Tips & FAQs</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>ABOUT</option>
-		<option value="about.html">About Surigao del Sur</option>
-		<option value="sustainability.html">Sustainability</option>
-		<option value="contact.html">Contact & Tourism Office</option>
-		<option value="news.html">News & Announcements</option>
-	</select>
-</div>
+<nav class="navbar navbar-expand-lg header py-3">
+<img src="./images/logo.png" alt="Logo" style="height: 130px;">
+    <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex flex-wrap gap-2 ms-auto align-items-center">
+                <a href="index.html" class="btn btn-primary fw-bold">Home</a>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>DISCOVER</option>
+					<option value="language.html">Language</option>
+					<option value="history.html">History & Culture</option>
+					<option value="people.html">People & Traditions</option>
+					<option value="local_cuisine.html">Local Cuisine</option>
+					<option value="photo.html">Photo Gallery</option>
+                </select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>DESTINATIONS</option>
+                    <option value="natural_wonders.html">Natural Wonders</option>
+					<option value="beaches.html">Beaches & Islands</option>
+					<option value="inland.html">Inland Attractions</option>
+					<option value="municipality.html">Municipality Highlights</option>
+                </select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>ACTIVITIES</option>
+                    <option value="eco_tourism.html">Adventure & Eco-Tourism</option>
+					<option value="festivals.html">Festivals & Events</option>
+					<option value="arts.html">Arts & Crafts</option>
+                </select>
+
+				<select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+					<option value="#" selected disabled>PLAN YOUR TRIP</option>
+					<option value="getting_there.html">Getting There</option>
+					<option value="where_to_stay.html">Where to Stay</option>
+					<option value="travel_tips.html">Travel Tips & FAQs</option>
+				</select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>ABOUT</option>
+                    <option value="about.html">About Surigao del Sur</option>
+                    <option value="sustainability.html">Sustainability</option>
+                    <option value="contact.html">Contact & Tourism Office</option>
+                    <option value="news.html">News & Announcements</option>
+					
+                </select>
+            </div>
+        </div>
+    </div>
+</nav>
 <div class="grid">
 	<div class="box box-1">
 		<h1>Where to Stay in Surigao Del Sur</h1>

@@ -1,69 +1,158 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
-	<title>Photo Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Photo Gallery</title>
 </head>
 <body>
-<div class="header">
-	<img src="./images/logo.png">
-	<header>
-		<a href="index.html">Home</a>
-	</header>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>DISCOVER</option>
-		<option value="language.html">Language</option>
-		<option value="history.html">History & Culture</option>
-		<option value="people.html">People & Traditions</option>
-		<option value="local_cuisine.html">Local Cuisine</option>
-		<option value="photo.html">Photo Gallery</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>DESTINATIONS</option>
-		<option value="natural_wonders.html">Natural Wonders</option>
-		<option value="beaches.html">Beaches & Islands</option>
-		<option value="inland.html">Inland Attractions</option>
-		<option value="municipality.html">Municipality Highlights</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>ACTIVITIES</option>
-		<option value="eco_tourism.html">Adventure & Eco-Tourism</option>
-		<option value="festivals.html">Festivals & Events</option>
-		<option value="arts.html">Arts & Crafts</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>PLAN YOUR TRIP</option>
-		<option value="getting_there.html">Getting There</option>
-		<option value="where_to_stay.html">Where to Stay</option>
-		<option value="travel_tips.html">Travel Tips & FAQs</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>ABOUT</option>
-		<option value="about.html">About Surigao del Sur</option>
-		<option value="sustainability.html">Sustainability</option>
-		<option value="contact.html">Contact & Tourism Office</option>
-		<option value="news.html">News & Announcements</option>
-	</select>
+
+
+<nav class="navbar navbar-expand-lg header py-3">
+<img src="./images/logo.png" alt="Logo" style="height: 130px;">
+    <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex flex-wrap gap-2 ms-auto align-items-center">
+                <a href="index.html" class="btn btn-primary fw-bold">Home</a>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>DISCOVER</option>
+                    <option value="language.html">Language</option>
+                    <option value="history.html">History & Culture</option>
+                    <option value="people.html">People & Traditions</option>
+                    <option value="local_cuisine.html">Local Cuisine</option>
+                    <option value="photo.html">Photo Gallery</option>
+                </select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>DESTINATIONS</option>
+                    <option value="natural_wonders.html">Natural Wonders</option>
+                    <option value="beaches.html">Beaches & Islands</option>
+                    <option value="inland.html">Inland Attractions</option>
+                    <option value="municipality.html">Municipality Highlights</option>
+                </select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>ACTIVITIES</option>
+                    <option value="eco_tourism.html">Adventure & Eco-Tourism</option>
+                    <option value="festivals.html">Festivals & Events</option>
+                    <option value="arts.html">Arts & Crafts</option>
+                </select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>PLAN YOUR TRIP</option>
+                    <option value="getting_there.html">Getting There</option>
+                    <option value="where_to_stay.html">Where to Stay</option>
+                    <option value="travel_tips.html">Travel Tips & FAQs</option>
+                </select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>ABOUT</option>
+                    <option value="about.html">About Surigao del Sur</option>
+                    <option value="sustainability.html">Sustainability</option>
+                    <option value="contact.html">Contact & Tourism Office</option>
+                    <option value="news.html">News & Announcements</option>
+                    
+                </select>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <h2 class="text-center">📸 Photo Gallery</h2>
+    <p class="text-center">A glimpse of the beauty of Surigao del Sur</p>
+    <hr class="border border-warning opacity-100 ">
+
+
+    <div class="row row-cols-2 row-cols-md-4 g-3">
+
+        <div class="col">
+            <div class="card gallery-card shadow-sm">
+                <img src="./images/laswitan.webp" class="gallery-img" alt="Laswitan">
+                <div class="card-body p-2">
+                    <p class="card-text text-center small fw-semibold mb-0">Laswitan</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card gallery-card shadow-sm">
+                <img src="./images/enchanted_river.jpg" class="gallery-img" alt="Enchanted River">
+                <div class="card-body p-2">
+                    <p class="card-text text-center small fw-semibold mb-0">Enchanted River</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card gallery-card shadow-sm">
+                <img src="./images/manobo_ritual.gif" class="gallery-img" alt="Manobo Ritual">
+                <div class="card-body p-2">
+                    <p class="card-text text-center small fw-semibold mb-0">Manobo Ritual</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card gallery-card shadow-sm">
+                <img src="./images/sea.jpg" class="gallery-img" alt="Sea">
+                <div class="card-body p-2">
+                    <p class="card-text text-center small fw-semibold mb-0">The Sea</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card gallery-card shadow-sm">
+                <img src="./images/kinilaw.jpg" class="gallery-img" alt="Kinilaw">
+                <div class="card-body p-2">
+                    <p class="card-text text-center small fw-semibold mb-0">Kinilaw</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card gallery-card shadow-sm">
+                <img src="./images/mandaya.avif" class="gallery-img" alt="Mandaya">
+                <div class="card-body p-2">
+                    <p class="card-text text-center small fw-semibold mb-0">Mandaya Culture</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card gallery-card shadow-sm">
+                <img src="./images/sayongsong.avif" class="gallery-img" alt="Sayongsong">
+                <div class="card-body p-2">
+                    <p class="card-text text-center small fw-semibold mb-0">Sayongsong</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card gallery-card shadow-sm">
+                <img src="./images/treasure.jpg" class="gallery-img" alt="Treasure">
+                <div class="card-body p-2">
+                    <p class="card-text text-center small fw-semibold mb-0">Treasure</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
-<div class="grid">
-	<div class="box box-1">
-		<h1>Photo Gallery of anything about Surigao Del Sur!</h1>
-	</div>
-	<div class="box box-2" style="gap: 8px"> 
-		<img src="./images/laswitan.webp">
-		<img src="./images/enchanted_river.jpg">
-		<img src="./images/manobo_ritual.gif">
-		<img src="./images/sea.jpg">
-	</div>
-	<div class="box box-3" style="gap: 8px">
-		<img src="./images/kinilaw.jpg">
-		<img src="./images/mandaya.avif">
-		<img src="./images/sayongsong.avif">
-		<img src="./images/treasure.jpg">
-	</div>
-</div>
+
+
 <footer>SURIGAO DEL SUR | 2026</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

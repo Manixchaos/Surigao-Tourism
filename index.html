@@ -5,68 +5,102 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home Page</title>
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-<div class="header">
-	<img src="./images/logo.png">
-	<header>
-		<a href="index.html">Home</a>
-	</header>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>DISCOVER</option>
-		<option value="language.html">Language</option>
-		<option value="history.html">History & Culture</option>
-		<option value="people.html">People & Traditions</option>
-		<option value="local_cuisine.html">Local Cuisine</option>
-		<option value="photo.html">Photo Gallery</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>DESTINATIONS</option>
-		<option value="natural_wonders.html">Natural Wonders</option>
-		<option value="beaches.html">Beaches & Islands</option>
-		<option value="inland.html">Inland Attractions</option>
-		<option value="municipality.html">Municipality Highlights</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>ACTIVITIES</option>
-		<option value="eco_tourism.html">Adventure & Eco-Tourism</option>
-		<option value="festivals.html">Festivals & Events</option>
-		<option value="arts.html">Arts & Crafts</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>PLAN YOUR TRIP</option>
-		<option value="getting_there.html">Getting There</option>
-		<option value="where_to_stay.html">Where to Stay</option>
-		<option value="travel_tips.html">Travel Tips & FAQs</option>
-	</select>
-	<select class="option" onchange="location = this.value;">
-		<option value="#" selected disabled>ABOUT</option>
-		<option value="about.html">About Surigao del Sur</option>
-		<option value="sustainability.html">Sustainability</option>
-		<option value="contact.html">Contact & Tourism Office</option>
-		<option value="news.html">News & Announcements</option>
-	</select>
-</div>
+<nav class="navbar navbar-expand-lg header py-3">
+<img src="./images/logo.png" alt="Logo" style="height: 130px;">
+    <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="grid">
-	<div class="box box-1">
-		<h1>About Enchanted River</h1>
-		<p>The Enchanted River also called Hinatuan Sacred River, its unusual sapphire and jade colors and unexplored depth inspire many which the locals call it Enchanted river because of the "Enkantos" that dwell there.</p>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex flex-wrap gap-2 ms-auto align-items-center">
+                <a href="index.html" class="btn btn-primary fw-bold">Home</a>
 
-		<h1>How Deep is the Enchanted River?</h1>
-		<p>The Hinatuan Enchanted River is around 24m (80 feet) deep, and quite short. There is an underground cave system which spits the river out. The cave was explored by Alex Santos in 1999 and continued through 2014. It led to the discovery of a hidden cave opening at 30 meters in depth.</p>	
-	</div>
-	
-	<div class="box box-2">
-		<video autoplay loop src="./videos/enchanted_river.mp4"></video>
-	</div>
-	
-	<div class="box box-3">
-		<img src="./images/enchanted_river.jpg">
-		<img src="./images/enchanted2.jpg">
-		<img src="./images/enchanted3.jpg">
-	</div>
-</div>
-<footer>SURIGAO DEL SUR | 2026</footer>
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>DISCOVER</option>
+					<option value="language.html">Language</option>
+					<option value="history.html">History & Culture</option>
+					<option value="people.html">People & Traditions</option>
+					<option value="local_cuisine.html">Local Cuisine</option>
+					<option value="photo.html">Photo Gallery</option>
+                </select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>DESTINATIONS</option>
+                    <option value="natural_wonders.html">Natural Wonders</option>
+					<option value="beaches.html">Beaches & Islands</option>
+					<option value="inland.html">Inland Attractions</option>
+					<option value="municipality.html">Municipality Highlights</option>
+                </select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>ACTIVITIES</option>
+                    <option value="eco_tourism.html">Adventure & Eco-Tourism</option>
+					<option value="festivals.html">Festivals & Events</option>
+					<option value="arts.html">Arts & Crafts</option>
+                </select>
+
+				<select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+					<option value="#" selected disabled>PLAN YOUR TRIP</option>
+					<option value="getting_there.html">Getting There</option>
+					<option value="where_to_stay.html">Where to Stay</option>
+					<option value="travel_tips.html">Travel Tips & FAQs</option>
+				</select>
+
+                <select class="form-select border-0 fw-bold text-white bg-primary w-auto" onchange="location = this.value;">
+                    <option value="#" selected disabled>ABOUT</option>
+                    <option value="about.html">About Surigao del Sur</option>
+                    <option value="sustainability.html">Sustainability</option>
+                    <option value="contact.html">Contact & Tourism Office</option>
+                    <option value="news.html">News & Announcements</option>
+					
+                </select>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid p-0">
+    <div class="row g-0">
+        <div class="col-lg-4 p-4 text-white" style="background-color: #218af2;">
+            <section class="mb-5">
+                <h1 class="border-bottom border-warning border-4 pb-2 mb-4">About Enchanted River</h1>
+                <p class="fs-5 lh-base">The Enchanted River, also called Hinatuan Sacred River, inspires many with its unusual sapphire and jade colors and unexplored depth. Locals believe "Enkantos" dwell within its waters.</p>
+            </section>
+
+            <section>
+                <h1 class="border-bottom border-warning border-4 pb-2 mb-4">How Deep is it?</h1>
+                <p class="fs-5 lh-base">It is roughly 24m (80 feet) deep. An underground cave system, first explored in 1999, continues to be a source of wonder, with openings discovered as deep as 30 meters.</p>
+            </section>
+        </div>
+
+        <div class="col-lg-8" style="background-color: skyblue;">
+            <div class="row g-2 p-2">
+                <div class="col-12">
+                    <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+                        <video autoplay loop muted src="./videos/enchanted_river.mp4" style="object-fit: cover;"></video>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/enchanted_river.jpg" class="img-fluid rounded shadow-sm h-100" style="object-fit: cover;" alt="Enchanted River 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/enchanted2.jpg" class="img-fluid rounded shadow-sm h-100" style="object-fit: cover;" alt="Enchanted River 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/enchanted3.jpg" class="img-fluid rounded shadow-sm h-100" style="object-fit: cover;" alt="Enchanted River 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-yellow py-4 text-center fw-bold border-top border-4 border-white">
+    SURIGAO DEL SUR | 2026
+</footer>
 </body>
 </html>
